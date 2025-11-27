@@ -1,11 +1,54 @@
+# Collaborative Educational Platform
 
-  # Collaborative Educational Platform
+## Overview
 
-  This is a code bundle for Collaborative Educational Platform. The original project is available at https://www.figma.com/design/6Tm6saomBZ1q42PiLMldNK/Collaborative-Educational-Platform.
+The Collaborative Educational Platform is a web application designed to facilitate learning and collaboration among users. It provides features such as user authentication, content creation, bookmarking, and community engagement through posts and comments. This platform aims to create an interactive environment for users to share knowledge and resources.
 
-  ## Running the code
+## Features
 
-  Run `npm i` to install the dependencies.
+- **User Authentication**: Secure sign-up and login functionality.
+- **Content Creation**: Users can create, edit, and delete posts.
+- **Bookmarking**: Save posts for later reference.
+- **Comments**: Engage with content through comments.
+- **Search Functionality**: Easily find posts and resources.
+- **Responsive Design**: Optimized for both desktop and mobile devices.
 
-  Run `npm run dev` to start the development server.
+## Technologies Used
+
+- **Frontend**: 
+  - React
+  - Vite
+  - TypeScript
+  - Tailwind CSS (for styling)
   
+- **Backend**: 
+  - Supabase (for database and authentication)
+
+## Getting Started
+
+### Prerequisites
+
+Make sure you have the following installed on your machine:
+
+- [Node.js](https://nodejs.org/) (version 14 or higher)
+- [npm](https://www.npmjs.com/) (comes with Node.js)
+
+### Installation
+
+1. Clone the repository:
+
+   ```bash
+   git clone https://github.com/yourusername/collaborative-educational-platform.git
+   cd collaborative-educational-platform```
+
+2. Install the dependencies:
+
+   ```bash
+   npm i
+   ```
+
+3. Start the development server:
+
+   ```bash
+   npm run dev
+   ```

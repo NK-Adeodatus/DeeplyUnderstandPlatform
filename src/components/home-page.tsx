@@ -15,7 +15,7 @@ interface HomePageProps {
 export function HomePage({ onAuthClick, currentUser, onNavigate }: HomePageProps) {
   const [posts, setPosts] = useState<Post[]>([]);
   const [isLoading, setIsLoading] = useState(true);
-  const [currentSort, setCurrentSort] = useState<string>('recent');
+  const [currentSort, setCurrentSort] = useState<'recent' | 'upvotes' | 'comments'>('recent');
 
   useEffect(() => {
     loadPosts(currentSort);
@@ -120,7 +120,7 @@ export function HomePage({ onAuthClick, currentUser, onNavigate }: HomePageProps
         <Tabs 
           defaultValue="recent" 
           className="w-full"
-          onValueChange={(value) => setCurrentSort(value)}
+          onValueChange={(value: 'recent' | 'upvotes' | 'comments') => setCurrentSort(value)}
         >
           <div className="flex items-center justify-between mb-6">
             <TabsList>

@@ -172,10 +172,11 @@ export function CreatePostPage({ currentUser, onNavigate }: CreatePostPageProps)
 
                   {/* Summary */}
                   <div className="space-y-2">
-                    <Label htmlFor="summary">Summary</Label>
+                    <Label htmlFor="summary">Detailed Explanation</Label>
                     <Textarea
                       id="summary"
-                      placeholder="Brief overview of what you'll explain (2-3 sentences)"
+                      placeholder="Write your in-depth explanation here. Include code examples, diagrams descriptions, and step-by-step breakdowns of how things work internally...
+                      "
                       rows={3}
                       value={summary}
                       onChange={(e) => setSummary(e.target.value)}
@@ -186,10 +187,10 @@ export function CreatePostPage({ currentUser, onNavigate }: CreatePostPageProps)
 
                   {/* Main Content */}
                   <div className="space-y-2">
-                    <Label htmlFor="content">Detailed Explanation</Label>
+                    <Label htmlFor="content">Summary</Label>
                     <Textarea
                       id="content"
-                      placeholder="Write your in-depth explanation here. Include code examples, diagrams descriptions, and step-by-step breakdowns of how things work internally..."
+                      placeholder="Brief overview of what you'll explain (2-3 sentences)"
                       rows={12}
                       value={content}
                       onChange={(e) => setContent(e.target.value)}
