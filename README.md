@@ -38,8 +38,8 @@ Make sure you have the following installed on your machine:
 1. Clone the repository:
 
    ```bash
-   git clone https://github.com/yourusername/collaborative-educational-platform.git
-   cd collaborative-educational-platform```
+   git clone https://github.com/NK-Adeodatus/DeeplyUnderstandPlatformcollaborative-educational-platform.git
+   ```
 
 2. Install the dependencies:
 
